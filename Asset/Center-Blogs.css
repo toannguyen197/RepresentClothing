@@ -1,0 +1,32 @@
+.center-title{
+    text-align: center;
+}
+.center-content{
+    margin: 0 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3 , 420px);
+    grid-column-gap: 3rem;
+    grid-row-gap: 5rem;
+    font-family: 'Roboto';
+}
+.container-content{
+}
+.container-content h3{
+    font-style: italic;
+    font-size: 24px;
+}
+.container-content a{
+    text-decoration: none;
+    color: black;
+}
+.container-content img{
+    height: 250px;
+    width: 420px;
+}
+.container-content:hover{
+    border: 1px solid black;
+    transition: 1s;
+}
