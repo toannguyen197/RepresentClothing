@@ -1,13 +1,46 @@
-/* The dots/bullets/indicators */
-.prev,.next{
-  cursor: pointer;
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
+
+/* Next & previous buttons */
+.prev, .next {
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
 .container-dot{
     text-align: center;
 }
-.dot{
+.dot {
   cursor: pointer;
-  border-radius: 15px 15px;
   padding: 1rem;
   margin: 1rem .5rem;
   background-color: #bbb;
@@ -35,4 +68,9 @@
 @keyframes fade4 {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
