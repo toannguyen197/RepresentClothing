@@ -47,6 +47,7 @@
 /*EFFECT*/
 
 .effect{
+    cursor: pointer;
     transition: all 1s;
     position: absolute;
     backface-visibility: hidden;

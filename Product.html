@@ -59,7 +59,24 @@
                     </div>
                     <div class="container-contact">
                     <i style="font-size:24px" id="fa-user" class="fa"><a href="Login.html">&#xf007;</a></i>
-                    <i style="font-size:24px" class="fa">&#xf07a;</i>
+                    </div>
+                    <div class="group-AddCart">
+                        <div class="group-AddCartHover">
+                            <div class="AddCart"><i class='fas fa-cart-arrow-down'
+                                    style='font-size:24px'></i><sup id="countStore"></sup>
+                                <ul class="sub-Cart">
+                                    <li class="Detail">
+                                        <a>ADD TO CART</a>
+                                        <a href="#">DETAILS</a>
+                                    </li>
+                                    <div id="showSanPham">
+                                    </div>
+                                    <li id="TotalMoney" style="font-weight: bold; ">COST: <span
+                                            style="font-size: 2rem; color: rgb(255, 65, 65);">0đ</span></li>
+                                    <li class="buyProduct"><a href="#">PAY</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,13 +140,13 @@
                 <p>Price</p>
                 <select name="Price" id="Price" data-default-sortby="manual">
                     <option value="manual" selected="selected">Price</option>
-                    <option value="price-ascending" >Price, low to high</option>
+                    <option value="price-ascending">Price, low to high</option>
                       
-                    <option value="price-descending" >Price, high to low</option>
+                    <option value="price-descending">Price, high to low</option>
                 </select>
             </div>
             </div>
-            <div class="product">
+            <div class="product" id="wapperSanPham">
                 <div class="card fade">
                         <div class="card-effect">
                             <div class="card-front effect"><img src="./IMG/Top/black1.jpg" height="300px" width="300px"></div>
@@ -139,6 +156,10 @@
                             <div class="product-title"><a href="#">VINTAGE BLACK WAFFLE LOGO T-SHIRT</a></div></br>
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">450.000₫</p>
+                        </div>
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
                         </div>
                 </div>
                 <div class="card fade">
@@ -151,6 +172,10 @@
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">450.000₫</p>
                         </div>
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
+                        </div>
                 </div>
                 <div class="card fade">
                         <div class="card-effect">
@@ -161,6 +186,10 @@
                             <div class="product-title"><a href="#">MINT BLUE WAFFLE LOGO T-SHIRT</a></div></br>
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">450.000₫</p>
+                        </div>
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
                         </div>
                 </div>
                 <div class="card fade">
@@ -173,6 +202,10 @@
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">550.000₫</p>
                         </div>  
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
+                        </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -183,6 +216,10 @@
                         <div class="product-title"><a href="#">DON GIOVANNI T-SHIRT (NO RESTOCK)</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">690.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -195,6 +232,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">350.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -205,6 +246,10 @@
                         <div class="product-title"><a href="#">VIETNAMESE T-SHIRT BLACK</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">500.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -217,6 +262,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">700.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -227,6 +276,10 @@
                         <div class="product-title"><a href="#">BASIC LONG SLEEVE - BLACK</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">350.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -239,6 +292,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">350.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -249,6 +306,10 @@
                         <div class="product-title"><a href="#">FUNCTIONAL JACKET - FJ:01</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">800.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -261,6 +322,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">750.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -271,7 +336,11 @@
                         <div class="product-title"><a href="#">BLACK DESTROYED SKINNY JEAN</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">750.000₫</p>
-            </div>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                         <div class="card-effect">
@@ -282,6 +351,10 @@
                             <div class="product-title"><a href="#">LIGHT INDIGO DESTROYED SKINNY JEAN</a></div></br>
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">750.000₫</p>
+                        </div>
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
                         </div>
                 </div>
                 <div class="card fade">
@@ -294,6 +367,10 @@
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">750.000₫</p>
                         </div>
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
+                        </div>
                 </div>
                 <div class="card fade">
                         <div class="card-effect">
@@ -305,6 +382,10 @@
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">600.000₫</p>
                         </div>  
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
+                        </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -315,6 +396,10 @@
                         <div class="product-title"><a href="#">URBAN JUNGLE TRACK PANT</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">650.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -327,6 +412,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">550.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -337,6 +426,10 @@
                         <div class="product-title"><a href="#">REPRESENT X DC TRACK PANT</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">450.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -349,6 +442,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">400.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -359,6 +456,10 @@
                         <div class="product-title"><a href="#">DC DRAGON SHORT</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">500.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -371,6 +472,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">400.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -381,6 +486,10 @@
                         <div class="product-title"><a href="#">INDIGO DENIM SHORT BLACK</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">450.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -393,6 +502,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">450.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -403,6 +516,10 @@
                         <div class="product-title"><a href="#">CROSSBODY VIETNAMESE X GDC</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">450.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -415,6 +532,10 @@
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">250.000₫</p>
                         </div>
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
+                        </div>
                 </div>
                 <div class="card fade">
                         <div class="card-effect">
@@ -425,6 +546,10 @@
                             <div class="product-title"><a href="#">CROSSBODY HANOIAN X GDC</a></div></br>
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">250.000₫</p>
+                        </div>
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
                         </div>
                 </div>
                 <div class="card fade">
@@ -437,6 +562,10 @@
                             <a href="HomePage.html">REPRESENT</a>
                             <p class="money">330.000₫</p>
                         </div>  
+                        <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                        <div style="text-align: center;">
+                            <input type="button" value="ADD TO CART" class="button-buy">
+                        </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -448,6 +577,11 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">250.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
+
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -458,6 +592,10 @@
                         <div class="product-title"><a href="#">DGR CAP WHITE</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">250.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -470,6 +608,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">250.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -480,6 +622,10 @@
                         <div class="product-title"><a href="#">DGR CAP BLUE</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">250.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -492,6 +638,10 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">350.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -502,6 +652,10 @@
                         <div class="product-title"><a href="#">GYM BAG DGR</a></div></br>
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">550.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
                     </div>
                 </div>
                 <div class="card fade">
@@ -514,6 +668,11 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">700.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
+
                 </div>
                 <div class="card fade">
                     <div class="card-effect">
@@ -525,10 +684,12 @@
                         <a href="HomePage.html">REPRESENT</a>
                         <p class="money">100.000₫</p>
                     </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
             </div>
-            <!-- <div class="product" id="wapperSanPham">
-            </div> -->
             <div class="container-dot">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <div class="dot" onclick="currentSlide(1)">1</div> 
@@ -605,5 +766,6 @@
     </div>
 
     <!-- <script src="./Process/ShowProduct.js"></script> -->
+    <script src="./Process/ShowProduct-HTML.js"></script>
 </body>
 </html>

@@ -1,27 +1,15 @@
 .center{
-    background-image: url(/IMG/EiffelTower1.jpg);
-    background-repeat: no-repeat;
+    padding: 10rem 0rem;
+    background-image: url(/./IMG/EiffelTower1.jpg);
     background-size: cover;
-    padding: 20rem 0px;
-    text-align: left;
     color: white;
 }
 .login-box{
-    width: 300px;
-    position: absolute;
-    top: 50px;
+    margin: auto;
+    padding-top: 4rem;
     height: 630px;
-}
-
-.form{
-    background-color: #1A1A1A;
     width: 450px;
-    height: 500px;
-    margin: 50px 5px;
-    position: absolute;
-    left: 550px;
-    top: 40px;
-    z-index: 10;
+    background-color: #1A1A1A;
 }
 h3{
     font-size: 35px;

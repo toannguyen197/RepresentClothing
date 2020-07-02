@@ -56,19 +56,35 @@
                 </div>
                 <div class="contact">
                     <div class="container-pic-search">
-                        <img src="./IMG/pic-search.png" class="pic-search" height="24px" width="24px">
-                        <input class="searching" type="text" placeholder="Searching...">
+                    <img src="./IMG/pic-search.png" class="pic-search" height="24px" width="24px">
+                    <input class="searching" type="text" placeholder="Searching...">
                     </div>
                     <div class="container-contact">
-                        <i style="font-size:24px" id="fa-user" class="fa"><a href="Login.html">&#xf007;</a></i>
-                        <i style="font-size:24px" class="fa">&#xf07a;</i>
+                    <i style="font-size:24px" id="fa-user" class="fa"><a href="Login.html">&#xf007;</a></i>
+                    </div>
+                    <div class="group-AddCart">
+                        <div class="group-AddCartHover">
+                            <div class="AddCart"><i class='fas fa-cart-arrow-down'
+                                    style='font-size:24px'></i><sup id="countStore"></sup>
+                                <ul class="sub-Cart">
+                                    <li class="Detail">
+                                        <a>ADD TO CART</a>
+                                        <a href="#">DETAILS</a>
+                                    </li>
+                                    <div id="showSanPham">
+                                    </div>
+                                    <li id="TotalMoney" style="font-weight: bold; ">COST: <span
+                                            style="font-size: 2rem; color: rgb(255, 65, 65);">0đ</span></li>
+                                    <li class="buyProduct"><a href="#">PAY</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="center">
             <div class="login-box">
-                <div class="form">
                     <div class="content">
                         <h3>
                             <center>Login Here</center>
@@ -85,10 +101,9 @@
                             <a href="#">Lost your password?</a>
                             <br>
                             <br>
-                            <a href="#">Don't have an account?</a>
+                            <a href="Registration.html">Don't have an account?</a>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
         <div class="footer">
@@ -169,6 +184,9 @@
             <div class="R2foot"><img src="./Favicon/R2.jpg" height="300px" width="300px"></div>
         </div>
         <div class="copyright">Copyright © 2020 Represent Studio. Powered by Sapo</div>
+
+        <script src="./Process/ShowProduct-HTML.js"></script>
+
     </div>
 </body>
 

@@ -10,9 +10,11 @@
     color: #484848;
 }
 .trailer{
+    cursor: pointer;
     margin-top: 20rem;
 }
 .slide-details{
+    cursor: pointer;
     margin-top: 19rem;
     display: flex;
     justify-content: center;

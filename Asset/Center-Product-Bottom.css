@@ -35,6 +35,7 @@
     font-size: 21px;
 }
 .card-effect{
+    cursor: pointer;
     height: 300px;
     width: 300px;
 }
