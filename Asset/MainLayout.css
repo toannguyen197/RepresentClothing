@@ -57,7 +57,7 @@ body{
 
 .group-AddCartHover .AddCart > .sub-Cart{
     display: none;
-    width: 25rem;
+    width: 26rem;
     position: absolute;
     right: -20px;
     top: 10px;

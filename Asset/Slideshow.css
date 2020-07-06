@@ -5,7 +5,6 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1200px;
   position: relative;
   margin: auto;
   cursor: pointer;
@@ -59,6 +58,11 @@ img {vertical-align: middle;}
 }
 
 /* The dots/bullets/indicators */
+.container-dot{
+    text-align:center;
+    position: relative;
+    margin: auto;
+}
 .dot {
   cursor: pointer;
   height: 15px;
