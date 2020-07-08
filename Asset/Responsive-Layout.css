@@ -1,0 +1,27 @@
+/*Responsive*/
+@media screen and (max-width: 400px){
+    .bar-messenger{
+        width: 45%;
+    }
+    .bar-messenger a{
+        font-size: 1px;
+    }
+    .logo img{
+        margin-right: 32rem;
+    }
+    .contact{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .detail-product img{
+        max-width: 90%;
+        max-height: 200px;
+        margin-left: 0.5rem;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: 300px;
+    }
+}

@@ -145,6 +145,7 @@
     transition: 1s;
 }
 .banner{
+    cursor: pointer;
     margin: 7rem 0;
     background-image: url(/IMG/Slide/banner.jpg);
     background-size: cover;
@@ -171,6 +172,7 @@
     text-align: center;
     display: flex;
     position: relative;
+    cursor: pointer;
 }
 .iden{
     position: absolute;
@@ -185,6 +187,7 @@
 .members{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
+    padding-top: 3rem;
     padding-bottom: 20rem;
 }
 .members img{
@@ -223,4 +226,136 @@
     animation-direction: alternate;
     animation-iteration-count: infinite;
     position: absolute;
+}
+
+@media screen and (max-width: 500px) {
+    .detail-product{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .LVMH-Attention {
+        margin-right: 0rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .LVMH-Attention h2 {
+        display: none;
+    }
+
+    .detail-product img {
+        height: 500px;
+        width: 90%;
+    }
+    .bar-messenger{
+        text-align: center;
+        height: 60px;
+    }
+    .menu{
+        display: none;
+    }
+    .container-pic-search{
+        display: none;
+    }
+    #fa-user{
+        display: none;
+    }
+    .group-AddCartHover{
+        left: 60%;
+    }
+    .logo{
+        margin-left: 4rem;
+    }
+    .The-Legend h2 {
+        display: none;
+    }
+
+    .The-Legend {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .product{
+        grid-template-columns: auto;
+    }
+
+    .center-content{
+        grid-template-columns: auto;
+    }
+
+    .card-effect img{
+        margin-left: 2rem;
+    }
+
+    .footer{
+        display: block;
+        width: 500px;
+    }
+    .footer h1{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer h4{
+        display: none;
+    }
+    .footer a{
+        display: none;
+    }
+    .footer>p{
+        display: none;
+    }
+    .container-icon{
+        display: none;
+    }
+    .icon-social{
+        text-align: center;
+        margin-right: 2rem;
+    }
+    .list-store{
+        text-align: center;
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto; 
+        display: none;
+    }
+
+    .R2foot{
+        display: none;
+    }
+
+    table{
+        width: 70%;
+    }
+
+    .est {
+        position: absolute;
+        top: 80%;
+        right: 40%;
+    }
+    .img-est{
+        margin-right: 2rem;
+    }
+    .slide-members img{
+        height: 300px;
+        width: 300px;
+    }
+    
+    .container-content {
+        width: 300px;
+    }
+
+    .container-content img {
+        padding-top: 3rem;
+        height: 300px;
+        width: 300px;
+    }
+    .img-iden{
+        display: none;
+    }
+    .iden{
+        display: none;
+    }
 }
