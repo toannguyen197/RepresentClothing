@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Asset/MainLayout.css">
-    <link rel="stylesheet" href="./Asset/Center-Blogs.css">
+    <link rel="stylesheet" href="./Asset/Center-Detail-Product.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <!-- Libs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/libs/js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="./libs/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/css/owl.theme.default.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!--Favicon-->
     <link rel="icon" type="image/jpg" sizes="1000*1000"  href="Favicon/R2.jpg">
@@ -82,55 +90,148 @@
             </div>
         </div>
         <div class="center">
-            <div class="center-title">
-                <h1 style="font-size: 46px;"><i>BLOGS</i></h1>
+            <div class="container-collection">
+                <h1 style="font-size: 46px;"><i>PRODUCT</i></h1>
             </div>
-            <div class="center-content">
-                <div class="container-content">
-                    <a href="#"><img src="./IMG/Blogs/Denim.jpg"></a>
-                    <a href="#"><h3>LEARN ABOUT DENIM</h3></a>
-                    <p>JUN 30, 2020</p>
+            <div class="container-product">
+                <div class="card">
+                    <div class="card-effect">
+                        <div class="card-front effect"><img src="./IMG/Bottom/emegency-1.jpg" height="750px" width="750px"></div>
+                        <div class="card-back effect"><img src="./IMG/Bottom/emegency-2.jpg" height="750px" width="750px"></div>
+                    </div>
+                    <div class="card-title">
+                        <div class="product-title">
+                            <a href="Yersin.html">EMERGENCY SUIT PANT</a>
+                        </div>
+                        </br>
+                        <p class="money">550.000₫</p>
+                    </div>
+                    <input type="text" class="product-nmber" value="1" disabled style="display: none;">
+                    <div style="text-align: center;">
+                        <input type="button" value="ADD TO CART" class="button-buy">
+                    </div>
                 </div>
-                <div class="container-content">
-                    <a href="#"><img src="./IMG/Blogs/Xfire-collab.jpg"></a>
-                    <a href="#"><h3>THE COLLAB xFIRE</h3></a>
-                    <p>JUN 1, 2020</p>
+                <div class="price-box">
+                    <h1 class="title-product">EMERGENCY SUIT PANT</h1>
+                    <ul class="detail-material">
+                        <li>Promote Courtesy In All Events</li>
+                        <li>Best Fit For Every Body Type</li>
+                        <li>Unique Motifs With High Print Technology</li>
+                    </ul>
+                    <strong>#REPRESENT #ProudlyMadeInVietnam</strong>                 
+                    <br>
+                    <br>
+                    <div class="select-size">
+                        <select>
+                            <option value="manual" selected="selected">Size</option>
+                                
+                            <option value="" >S</option>
+                                
+                            <option value="" >M</option>
+                                
+                            <option value="" >L</option>
+
+                            <option value="" >XL</option>
+
+                        </select>
+                    </div>
+                    <p class="pre">Pre-Oder</p>
+                    <h3></h3>
                 </div>
-                <div class="container-content">
-                    <a href="#"><img src="./IMG/Blogs/new-release.jpg"></a>
-                    <a href="#"><h3>LINE UP FOR NEW PRODUCT</h3></a>
-                    <p>MAY 15, 2020</p>
+            </div>
+            <div class="recommend">
+                <h1 style="font-size: 60px;font-family: 'Bangers';">RECOMMENDED PRODUCTS</h1>
+            </div>
+            <div class="container-album">
+                <div class="owl-carousel owl-theme">
+                    <div class="container-item">
+                        <div class="item"><img src="./IMG/Top/sky1.jpg" alt="" srcset=""></div>
+                        <div class="info">MINT BLUE WAFFLE LOGO T-SHIRT
+                            <p>450.000₫</p>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="item"><img src="./IMG/Assc/gymbag1.jpg" alt="" srcset=""></div>
+                        <div class="info">GYM BAG DGR
+                            <p>450.000₫</p>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="item"><img src="./IMG/Bottom/urban-jungle-1.jpg" alt="" srcset=""></div>
+                        <div class="info">URBAN JUNGLE TRACK PANT
+                            <p>450.000₫</p>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="item"><img src="./IMG/Top/jacket1.jpg" alt="" srcset=""></div>
+                        <div class="info">FUNCTIONAL JACKET - FJ:01
+                            <p>450.000₫</p>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="item"><img src="./IMG/Assc/bag1.jpg" alt="" srcset=""></div>
+                        <div class="info">BLACK NYLON MESSENGER BAG
+                            <p>450.000₫</p>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="item"><img src="./IMG/Bottom/cargo-pant-1.jpg" alt="" srcset=""></div>
+                        <div class="info">REPRESENT X VETEMENTS CARGO PANT
+                            <p>450.000₫</p>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="item"><img src="./IMG/Top/hood1.jpg" alt="" srcset=""></div>
+                        <div class="info">HOODIE BLACK COLLAPSE GRIMMDC
+                            <p>450.000₫</p>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="item"><img src="./IMG/Top/flannelsky1.jpg" alt="" srcset=""></div>
+                        <div class="info">SKY BLUE AND BLACK PLAID CHECK SHIRT
+                            <p>450.000₫</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="container-content">
-                    <a href="#"><img src="./IMG/Blogs/new-pant.jpg"></a>
-                    <a href="#"><h3>JUNGLE PANTS IN URBAN</h3></a>
-                    <p>FEB 2, 2020</p>
-                </div>
-                <div class="container-content">
-                    <a href="#"><img src="./IMG/Blogs/cap.jpg"></a>
-                    <a href="#"><h3>INDISPENSABLE ACCESSORIES</h3></a>
-                    <p>NOV 19, 2019</p>
-                </div>
-                <div class="container-content">
-                    <a href="#"><img src="./IMG/Blogs/rawImage.jpg"></a>
-                    <a href="#"><h3>CELEBRITY FASHION</h3></a>
-                    <p>JUL 19, 2019</p>
-                </div>
-                <div class="container-content">
-                    <a href="#"><img src="./IMG/Blogs/milan.jpg"></a>
-                    <a href="#"><h3>BEST STREET-STYLE FROM MILAN FASHION WEEK FALL 2019</h3></a>
-                    <p>JUL 3, 2019</p>
-                </div>
-                <div class="container-content">
-                    <a href="#"><img src="./IMG/Blogs/rickowen.jpg"></a>
-                    <a href="#"><h3>RICK OWENS AND TYRONE SUSMAN IN RICK OWENS</h3></a>
-                    <p>JUN 8, 2019</p>
-                </div>
-                <div class="container-content">
-                    <a href="#"><img src="./IMG/Blogs/phil_paris_day3_27.jpg"></a>
-                    <a href="#"><h3>PREPARE FOR THE PRODUCT FOR THE WINTER </h3></a>
-                    <p>DEC 23, 2018</p>
-                </div>
+                <script>
+                    $('.owl-carousel').owlCarousel({
+                 loop:true,
+                 nav:true,
+                 responsive:{
+                     0:{
+                         items:1
+                     },
+                     600:{
+                         items:2
+                     },
+                     1000:{
+                         items:3
+                     },
+                     1300:{
+                         items:4
+                     },
+                     1600:{
+                         items:6
+                     },
+                     1900:{
+                         items:7
+                     },
+                     2100:{
+                         items:8
+                     },
+                     2400:{
+                         items:9
+                     },
+                     2700:{
+                         items:10
+                     },
+                     3000:{
+                         items:11
+                     },
+                 }
+             })
+                 </script>
+             
             </div>
         </div>
         <div class="footer">
@@ -198,8 +299,8 @@
         </div>
         <div class="copyright">Copyright © 2020 Represent Studio. Powered by Sapo</div>
         
+        <script src="./Process/ShowProduct-HTML.js"></script>
         <script src="./Process/Cart-Index.js"></script>
-
     </div>
 </body>
 </html>

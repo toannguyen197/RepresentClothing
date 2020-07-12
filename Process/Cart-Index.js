@@ -1,46 +1,6 @@
 function DomID(id){
     return document.getElementById(id);
 }
-function TangDan(){
-    var priceElement=document.getElementsByClassName('money');
-    for(let i=0;i<priceElement.length;i++){
-            for ( var j = i + 1; j < priceElement.length; j++){
-            //Bỏ chữ đ sau giá tiền
-            if (parseFloat(priceElement[i].innerText.replace('đ','')) > parseFloat(priceElement[j].innerText.replace('đ',''))){
-                var temp = priceElement[i].parentElement.parentElement.innerHTML
-                priceElement[i].parentElement.parentElement.innerHTML = priceElement[j].parentElement.parentElement.innerHTML;
-                priceElement[j].parentElement.parentElement.innerHTML = temp;
-            }
-            }
-    }
-}
-function GiamDan(){  
-    var priceElement=document.getElementsByClassName('money');
-    for(let i=0;i<priceElement.length;i++){
-            for ( var j = i + 1; j < priceElement.length; j++){
-            //Bỏ chữ đ sau giá tiền
-            if (parseFloat(priceElement[i].innerText.replace('đ','')) < parseFloat(priceElement[j].innerText.replace('đ',''))){
-                var temp = priceElement[i].parentElement.parentElement.innerHTML
-                priceElement[i].parentElement.parentElement.innerHTML = priceElement[j].parentElement.parentElement.innerHTML;
-                priceElement[j].parentElement.parentElement.innerHTML = temp;
-            }
-            }
-    }
-}
-DomID('Price').addEventListener('change', () => {
-    var selectedSanPham = DomID('Price').value;
-    if (selectedSanPham == 'price-ascending') {
-        TangDan();
-        Dathang();
-    }
-    else if (selectedSanPham == 'price-descending') {
-        GiamDan();
-        Dathang();
-    }
-    else if (selectedSanPham == 'manualPrice'){
-        
-    }
-});
 DomID('countStore').innerHTML=0;
 
 var product=document.getElementsByClassName('product-title');
@@ -52,7 +12,6 @@ var product=document.getElementsByClassName('product-title');
   var prices=[];
   var numbers=[];
 
-function Dathang(){
   for(let i=0;i<product.length;i++){
         var button=document.getElementsByClassName('button-buy');
         button[i].addEventListener('click',()=>{
@@ -111,9 +70,6 @@ function Dathang(){
             renderHTML();
         })
   }
-}
-
-    Dathang();
 
   function renderHTML() {
     var count =0;
@@ -126,7 +82,6 @@ function Dathang(){
      //tongTien = Number(prices.replace('đ',''));
      DomID('countStore').innerHTML=count;
      DomID('showSanPham').innerHTML=sanpham;
-
     }
 
      function xoahang(n){    
